@@ -22,9 +22,9 @@ avl_t *array_to_avl(int *array, size_t size)
 			if (array[n] == array[m])
 				break;
 		}
-		if (m == i)
+		if (n == m)
 		{
-			if (avl_insert(&tree, array[i]) == NULL)
+			if (avl_insert(&tree, array[m]) == NULL)
 				return (NULL);
 		}
 	}
